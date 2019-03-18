@@ -128,3 +128,4 @@ char word[kata][15];
 	}	
 	
 }
+//fikri tamvan
