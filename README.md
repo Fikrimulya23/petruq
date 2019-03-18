@@ -1,0 +1,2 @@
+# petrux
+Pemrograman terstruktur
