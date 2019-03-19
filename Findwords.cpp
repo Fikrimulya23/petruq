@@ -60,3 +60,33 @@ int banyak =0;
 	for (int sb=0;sb<15;sb++){
 		
 		for (int sk=0;sk<15;sk++){
+		
+			int ada[8] = {0,0,0,0,0,0,0,0};
+			if (*(*(soal+sb)+sk) == *(word+0)){
+				
+				for(int i=1;i<=panjang(word);i++){
+					
+					if (sb <(15-panjang(word)))
+					if (*(*(soal+(sb+i))+sk) == *(word+i)) ada[0]++; //bawah
+					
+					if (sb >=(0+panjang(word)))
+					if (*(*(soal+(sb-i))+sk) == *(word+i)) ada[1]++; //atas
+					
+					if (sk <(15-panjang(word)))
+					if (*(*(soal+sb)+(sk+i)) == *(word+i)) ada[2]++; //kanan
+					
+					if (sk >=(0+panjang(word)))
+					if (*(*(soal+sb)+(sk-i)) == *(word+i)) ada[3]++; //kiri
+					
+					if (sb <(15-panjang(word)) && sk <(15-panjang(word))) 
+					if (*(*(soal+(sb+i))+(sk+i)) == *(word+i)) ada[4]++; //diagonal kanan bawah
+					
+					if (sb <(15-panjang(word)) && sk >=(0+panjang(word)))
+					if (*(*(soal+(sb+i))+(sk-i)) == *(word+i)) ada[5]++; //diagonal kiri bawah
+					
+					if (sb >=(0+panjang(word)) && sk <(15-panjang(word)))
+					if (*(*(soal+(sb-i))+(sk+i)) == *(word+i)) ada[6]++; //diagonal kanan atas
+					
+					if (sb >=(0+panjang(word)) && sk >=(0+panjang(word)))
+					if (*(*(soal+(sb-i))+(sk-i)) == *(word+i)) ada[7]++; //diagonal kiri atas
+				}
