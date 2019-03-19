@@ -89,4 +89,21 @@ int banyak =0;
 					
 					if (sb >=(0+panjang(word)) && sk >=(0+panjang(word)))
 					if (*(*(soal+(sb-i))+(sk-i)) == *(word+i)) ada[7]++; //diagonal kiri atas
+				
 				}
+				if (panjang(word) == 0){
+					banyak++;
+				}
+				else {
+					for(int l=0;l<8;l++){
+						if (ada[l] == panjang(word)) {
+							banyak++;}
+					}
+				}
+			}
+		}
+	}	
+		
+	if (banyak != 0 ) cout << "Ada\n";
+	else cout << "Tidak ada\n";	
+}
