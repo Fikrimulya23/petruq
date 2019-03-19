@@ -107,3 +107,22 @@ int banyak =0;
 	if (banyak != 0 ) cout << "Ada\n";
 	else cout << "Tidak ada\n";	
 }
+
+int main(){
+
+	panggil_soal();	
+	int jumlah_kata;
+	cout << "\nBerapa banyak kata yang akan dicari: ";
+	cin >> jumlah_kata;
+	char word[jumlah_kata][15];
+
+	for (int i=0;i<jumlah_kata;i++){
+		cout<<"Masukkan kata ke "<<i+1<<" : ";
+		cin>>word[i];
+		panjang(*(word+i));
+	}
+	for (int i=0;i<jumlah_kata;i++){
+		menaik(*(word+i));
+		cari(*(word+i));
+	}	
+}
