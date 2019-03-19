@@ -29,3 +29,34 @@ void panggil_soal(){
 }
 
 //Ubah semua huruf menjadi huruf kapital
+
+void menaik( char *word){
+	int x = 'A' - 'a';
+	if (x < 0) {
+		x*=-1;}
+	
+	for (int i=0;*(word+i);i++){
+		if ('A' < 'a'){
+			if (*(word+i) >= 'a') *(word+i)-=x;
+			}
+			else{
+				if (*(word+i) <= 'A') *(word+i)+=x;}
+	}
+}
+
+//menghitung panjang array
+
+int panjang(char *word){
+	int x;
+	for (int i=0;*(word+i);i++){
+		x = i;
+	}	
+	return x;
+}
+
+//pencarian kata
+void cari (char *(word)){
+int banyak =0;
+	for (int sb=0;sb<15;sb++){
+		
+		for (int sk=0;sk<15;sk++){
