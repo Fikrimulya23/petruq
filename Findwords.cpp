@@ -8,7 +8,7 @@ using namespace std;
 
 void awal () {
 	cout<<"====================================\n\n";
-	cout<<"   ==== Wellcome to find world ===\n\n";
+	cout<<"   ==== Welcome to Find World ===\n\n";
 	cout<<"====================================\n\n";
 }
 
