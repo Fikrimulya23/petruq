@@ -6,6 +6,12 @@
 #include <iostream>
 using namespace std;
 
+void awal () {
+	cout<<"====================================\n\n";
+	cout<<"   ==== Wellcome to find world ===\n\n";
+	cout<<"====================================\n\n";
+}
+
 char s0[15]	= 	{'T','G','B','W','W','I','N','T','E','R','W','S','E','S','N'};
 char s1[15]	=	{'A','A','U','N','T','T','M','M','H','F','O','O','D','N','B'};
 char s2[15]	=	{'J','L','W','C','Q','L','D','Z','M','P','M','V','D','M','R'};
@@ -115,6 +121,7 @@ int banyak =0;
 
 int main(){
 
+	awal();
 	panggil_soal();	
 	int jumlah_kata;
 	cout << "\nBerapa banyak kata yang akan dicari: ";
