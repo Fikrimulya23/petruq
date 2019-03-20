@@ -9,7 +9,7 @@ using namespace std;
 void awal () {
 	cout<<"====================================\n\n";
 	cout<<"  ===== Welcome to Find Words ====\n\n";
-	cout<<"  == UNIVERSITAS LAMPUNG ILKOMP ==  \n\n";
+	cout<<"  == UNIVERSITAS LAMPUNG ILKOMP 18 ==  \n\n";
 	cout<<"====================================\n\n";
 }
 
@@ -138,5 +138,7 @@ int main(){
 		cari(*(word+i));
 	}
 	
-	cout<<"\n\n\t\t==Terima kasih==";
+	cout<<endl;
+	cout<<"\n\t\t==Terima kasih==";
+	cout<<endl;
 }
