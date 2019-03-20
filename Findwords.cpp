@@ -136,5 +136,7 @@ int main(){
 	for (int i=0;i<jumlah_kata;i++){
 		menaik(*(word+i));
 		cari(*(word+i));
-	}	
+	}
+	
+	cout<<"\n\n\t\t==Terima kasih==";
 }
