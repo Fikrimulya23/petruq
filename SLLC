@@ -1,1 +1,72 @@
-//Fikri mulya permana - 1857051011
+/* Single Linked List Circular
+
+Fikri mulya permana - 1857051011
+Fadhel Riyantyo - 1817051065*/
+
+
+
+#include<iostream>
+using namespace std;
+
+class title
+{	
+	public :	
+		int num;
+		title *temp;	
+};
+
+title *head;
+
+void addhead (){
+	head= '\0';
+}
+
+bool check (){
+	if (head=='\0'){
+	return true;
+	}
+	else{
+	return false;
+	}
+}
+
+void addnumb (int data)
+{
+title *tmp;
+title *help;
+	tmp = new title ();
+	 	tmp->num = data;
+	 		tmp->temp = tmp;
+			 	if (check()==1)
+				 {
+				 	head=tmp;
+				 	head->temp=head;
+						  }	 
+					else
+					{
+					help=head;
+					while(help->temp!=head)
+					{
+						help=help->temp;
+						}	
+					tmp->temp=head;
+					head=tmp;
+					help->temp = head;	
+						}
+	cout<<"----Menyisipkan data---- \n";
+ } 	
+ 
+void addback(int data)
+{
+title *tmp;
+title *help;
+	tmp = new title ();
+	 	tmp->num = data;
+	 		tmp->temp = tmp;
+			 	if (check()==1)
+				 {
+				 	head=tmp;
+				 	head->temp=head;
+						  }	 
+					else
+					{
