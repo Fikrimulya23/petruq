@@ -137,3 +137,72 @@ void hapus_depan()
 		}
 }
 
+
+void hapus_belakang()
+{
+	title *clear;
+	title *help;
+		if (check()==0){
+			int var;
+			clear = head;
+			if(head->temp == head){
+				head = '\0';
+			}else{
+				help = head;
+				while(help->temp->temp != head){
+					help = help->temp;
+				}
+				clear = help->temp;
+	         	var = help->num;
+				help->temp = head;
+				delete clear;
+			}
+			cout<<"Data belakang telah dihapus!"<<endl;
+				} 	else 
+				  {
+		  	cout<<"empty"<<endl;
+		  		}
+}
+
+void tambah_tengah(){
+	title *tmp, *help;
+	int posisi_sisip;
+	if(head != NULL){
+		cout<<"Sisip data setelah data ke : ";
+		cin>>posisi_sisip;
+		help=head;
+		tmp=new title;
+		for (int i=1;i<posisi_sisip;i++){
+			if(help->temp != NULL){
+				help=help->temp;
+			}
+			else{
+				continue;
+			}
+		}
+		cout<<"Masukan Angka : ";
+		cin>>tmp->num;
+		tmp->temp=help->temp;
+		help->temp=tmp;
+	}
+	else{
+		cout<<"Belum Ada Data !";
+	}
+	
+}
+
+void hapusNode(){
+	int datahapus;
+	cout<<"angka ke berapa yang akan dihapus: ";
+	cin>>datahapus;
+	title *hapus = new title;
+	title *help = new title;
+	hapus = head;
+	for(int i=1;i<datahapus;i++){
+		help = hapus;
+		hapus = hapus->temp;
+}
+
+help->temp = hapus->temp;
+
+}
