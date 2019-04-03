@@ -68,5 +68,27 @@ title *help;
 				 	head=tmp;
 				 	head->temp=head;
 						  }	 
-					else
+					/* else
 					{
+					
+
+
+*/
+
+void cetak ()
+{
+if (!check())
+{
+	title *help;
+	help=head;
+	do{
+		cout<<help->num<<" ";
+		help=help->temp;
+	}
+	while (help!=head);
+	}
+	else
+	{
+		cout<<"empty";
+	}
+}
