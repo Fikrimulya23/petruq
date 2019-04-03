@@ -1,7 +1,9 @@
 /* Single Linked List Circular
 
-Fikri mulya permana - 1857051011
-Fadhel Riyantyo - 1817051065*/
+Fadhel Riyantyo - 1817051065
+Achmad Kurnia Chandra - 1817051070
+Fikri Mulya Permana - 1857051011
+*/
 
 
 
@@ -64,16 +66,25 @@ title *help;
 	 	tmp->num = data;
 	 		tmp->temp = tmp;
 			 	if (check()==1)
-				 {
+				{
 				 	head=tmp;
 				 	head->temp=head;
-						  }	 
-					/* else
+					}	 
+				else
+				{
+					help=head;
+					while(help->temp!=head)
 					{
-					
-
-
-*/
+						help=help->temp;
+						}	
+					help->temp = tmp;
+					tmp->temp = head;
+						
+				tmp->temp = head;		
+					}
+				
+	cout<<"----Menyisipkan data---- \n";
+ }
 
 void cetak ()
 {
@@ -92,3 +103,37 @@ if (!check())
 		cout<<"empty";
 	}
 }
+
+
+void hapus_depan()
+{
+	title *clear;
+	title *help;
+	if (check()==0)
+	{
+		int var;
+		clear=head;
+		var= head->num;
+			if (head->temp !=head)
+			{
+				help=head;
+					while (help->temp!=head)
+					{
+						help=help->temp;
+					}
+					head=head->temp;
+					delete clear;
+					help->temp=head;
+			}
+			else
+			{
+				head='\0';
+			}
+			cout<<"Data Depan Telah Dihapus!"<<endl;
+	}
+		else 
+		{
+			cout<<"empty"<<endl;
+		}
+}
+
