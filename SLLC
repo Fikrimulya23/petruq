@@ -3,6 +3,7 @@
 Fadhel Riyantyo - 1817051065
 Achmad Kurnia Chandra - 1817051070
 Fikri Mulya Permana - 1857051011
+Muhammad Arsyi Sobirin - 1817051066
 */
 
 
@@ -205,4 +206,67 @@ void hapusNode(){
 
 help->temp = hapus->temp;
 
+}
+
+void inputangka(){
+	cout<<"Masukan Banyak Angka : ";
+}
+
+
+int main(){	
+	int n,num;
+	addhead();
+	//================================================================//
+	cout<<"===Tambah Node Depan==="<<endl;		//Soal nomor 1
+	inputangka();
+	cin>>n;
+	for(int x=1;x<=n;x++)
+	{
+		cin>>num;	
+		addnumb(num);			
+	}
+	cetak();
+	cout<<"\n\n";
+	
+	//================================================================//
+	cout<<"===Tambah Node Belakang==="<<endl;	//Soal nomor 2
+	inputangka();
+	cin>>n;
+	for(int x=1;x<=n;x++)
+	{
+		cin>>num;	
+		addback(num);			
+	}
+	cetak();
+	cout<<"\n\n";
+	
+	//================================================================//
+	cout<<"===Hapus Node Depan==="<<endl;		//Soal nomor 3
+	hapus_depan();
+	cetak();
+	cout<<"\n\n";
+	
+	//================================================================//
+	cout<<"===Hapus Node Belakang==="<<endl;	//Soal nomor 4
+	hapus_belakang();
+	cetak();
+	cout<<"\n\n";
+	
+	//================================================================//
+	cout<<"===Tambah Node Tengah==="<<endl;		//Soal nomor 5
+	inputangka();
+	cin>>n;
+	for (int i=0;i<n;i++){
+		tambah_tengah();   
+	}
+	cetak();
+	cout<<"\n\n";
+	
+	//================================================================//
+	cout<<"===Hapus Node Tengah==="<<endl;		// Soal nomor 6
+	hapusNode();
+	cetak();
+	
+	
+	return 0;
 }
