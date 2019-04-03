@@ -265,7 +265,10 @@ int main(){
 	hapusNode();
 	cetak();
 	
-	cout<<"\n\nTerima kasih";
+	cout<<endl;
+	cout<<endl;
+	cout<<"Terima kasih";
+	cout<<endl;
 	
 	
 	return 0;
