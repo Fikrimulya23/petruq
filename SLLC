@@ -212,7 +212,7 @@ void inputangka(){
 
 
 int main(){	
-	int n,num;
+	int n, num;
 	addhead();
 	//================================================================//
 	cout<<"===Tambah Node Depan==="<<endl;		//Soal nomor 1
