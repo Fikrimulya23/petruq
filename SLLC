@@ -8,14 +8,14 @@ Muhammad Arsyi Sobirin - 1817051066
 
 
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class title
 {	
 	public :	
 		int num;
-		title *temp;	
+		title *temp;
 };
 
 title *head;
